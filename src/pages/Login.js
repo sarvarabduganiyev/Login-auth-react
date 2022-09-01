@@ -1,5 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
+import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
@@ -61,6 +62,9 @@ export default function Login() {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
+        <Alert severity="info" sx={{ my: "15px" }}>
+          Username: user_task | Password: user_task | Subdomain: toko
+        </Alert>
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
           <Input
             type="text"
